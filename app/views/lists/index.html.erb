@@ -1,0 +1,28 @@
+<h1>Lists#index</h1>
+<p>Find me in app/views/lists/index.html.erb</p>
+
+<h2>LISTS</h2>
+
+<ul>
+    <% @lists.each do |list| %>
+        <li>
+            <%#= link_to restaurant.title, restaurant_path(restaurant.id) %>
+            <%= link_to list.name, list_path(list) %>
+
+            <%#= link_to "Laundry", "/restaurants/1" %>
+        </li>
+    <% end %>
+</ul>
+
+<%= link_to "Create list", new_list_path %>
+<%#= link_to "Create list", "/lists/new" %>
+
+
+<%# link_to "text do link", url %>
+<%#= link_to "Go to link", "https://www.google.com" %>
+
+
+<%# fazer isso... %>
+<%#= link_to "Go to index", restaurants_path %>
+<%# ...é igual que fazer isso %>
+<%#= link_to "Go to index", "/restaurants" %>
